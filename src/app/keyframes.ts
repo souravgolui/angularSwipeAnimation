@@ -1,4 +1,4 @@
-import {keyframes, style } from '@angular/animations';
+import { style } from '@angular/animations';
 
 export const rollOutRight = [
     style({opacity: 1, offset: 0}),
