@@ -1,19 +1,12 @@
-import { BrowserModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
-import {MatCardModule} from '@angular/material/card';
+import {MatCardModule} from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
-
-import * as Hammer from 'hammerjs';
-
-export class MyGestureConfig extends HammerGestureConfig {
-  overrides = {
-    swipe: { direction: Hammer.DIRECTION_ALL }
-  } as any;
-}
+import { MyGestureConfig } from './hammer.mock';
 
 @NgModule({
   declarations: [
